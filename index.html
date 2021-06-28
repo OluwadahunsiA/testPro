@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;500;700family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="./scripts/cards.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/faqandbelow.js" defer></script>
+    <script src="./scripts/news.js" defer></script>
+    <script src="./scripts/news__modal.js" defer></script>
+    <script src="./scripts/orders_modal.js" defer></script>
+    <script src="./scripts/rental__price.js" defer></script>
+    <script src="./scripts/modal__options.js" defer></script>
+    <script src="./scripts/sortCards.js" defer></script>
+    <script src="./scripts/mutipleCardClicking.js" defer></script>
+  </head>
+  <body>
+    <!-- This is for the heading photo -->
+    <div class="logo container">
+      <img src="./logo.svg" alt="logo" />
+    </div>
+
+    <!-- This is for the video -->
+
+    <div class="modal">
+      <div class="video">
+        <div class="video__image">
+          <iframe
+            width="560"
+            height="315"
+            class="video__image--player"
+            src="https://www.youtube.com/embed/2rEXRPZCi_s"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="video__image__control">
+            <span class="video__image__control--circle"></span>
+            <img
+              src="./arrow.svg"
+              alt="play"
+              class="video__image__control--button"
+            />
+          </div>
+        </div>
+        <img src="./dots.svg" alt="dots" class="video__dots" />
+        <img src="./ellipse.svg" alt="dots" class="video__ellipse" />
+      </div>
+
+      <div class="modalWindow hide">
+        <iframe
+          width="560"
+          height="315"
+          class="video__image--player"
+          src="https://www.youtube.com/embed/2rEXRPZCi_s?autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay"
+          allowfullscreen
+        ></iframe>
+
+        <div class="modalWindow__fas">
+          <img src="./cancel.svg" alt="cancel" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <section class="text">
+      <div class="text__main">
+        <h3 class="text__main--content">
+          Фото на <span class="text__main--span">праздник</span>
+        </h3>
+      </div>
+
+      <div class="text__paragraph">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur <a>adispiscing elit,</a> sed
+          do eiusmod tempor incididunt ut labore et dolore magna <br />aliqua.
+        </p>
+      </div>
+
+      <div class="text__detail">
+        <div class="text__detail__content">
+          <img
+            class="text__detail__image"
+            src="./infinity.svg"
+            alt="infinity"
+          />
+          <p class="text__detail__text">Безлимитная <br />печать фото</p>
+        </div>
+        <div class="text__detail__content">
+          <img
+            class="text__detail__image"
+            src="./Mustaches Mask.svg"
+            alt="mustache"
+          />
+          <p class="text__detail__text">Фотореквизит <br />в наличии</p>
+        </div>
+        <div class="text__detail__content">
+          <img class="text__detail__image" src="./Frame.svg" alt="frame" />
+          <p class="text__detail__text">Фотоотчет в <br />электронном виде</p>
+        </div>
+        <div class="text__detail__content">
+          <img class="text__detail__image" src="./tag.svg" alt="tag" />
+          <p class="text__detail__text">Цены<br />ниже рынка</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фотобудки -->
+
+    <section class="photobuds">
+      <!--Фотобудки  -->
+      <h1 class="photobuds__heading">Фотобудки</h1>
+      <!-- Сортировка -->
+      <div class="photobuds__sort">
+        <label for="standard-select">Сортировка:</label>
+        <div class="select">
+          <select id="standard-select">
+            <option value="По возрастанию цены">По возрастанию</option>
+            <option value="По убыванию цены">По убыванию</option>
+          </select>
+          <img class="select__arrow" src="./dropdown.svg" alt="dropdown" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS. Check for content in the Javascript file "cards.js" -->
+    <section class="cardSection"></section>
+
+    <section class="question">
+      <div class="question__main">
+        <p class="question__main--first">Почему выбирают нас?</p>
+        <h1 class="question__main--second">FAQ</h1>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="question__block">
+        <div class="question__block__header">
+          <p class="question__block__header__title">
+            Какой реквизит идет в комплекте?
+            <img
+              src="./faq__arrow__up.svg"
+              alt="arrowUp"
+              class="faq__arrow__up"
+            />
+            <img
+              src="./faq__arrow__down.svg"
+              alt="arrowDown"
+              class="faq__arrow__down"
+            />
+          </p>
+          <p class="question__block__header__text">
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка Какой то текст для заголовка Какой то текст для
+            заголовка Какой то текст для заголовка Какой то текст для заголовка
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка
+          </p>
+        </div>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="question__block">
+        <div class="question__block__header">
+          <p class="question__block__header__title">
+            Какой реквизит идет в комплекте?
+            <img
+              src="./faq__arrow__up.svg"
+              alt="arrowUp"
+              class="faq__arrow__up"
+            />
+            <img
+              src="./faq__arrow__down.svg"
+              alt="arrowDown"
+              class="faq__arrow__down"
+            />
+          </p>
+          <p class="question__block__header__text">
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка Какой то текст для заголовка Какой то текст для
+            заголовка Какой то текст для заголовка Какой то текст для заголовка
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка
+          </p>
+        </div>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="question__block">
+        <div class="question__block__header">
+          <p class="question__block__header__title">
+            Какой реквизит идет в комплекте?
+            <img
+              src="./faq__arrow__up.svg"
+              alt="arrowUp"
+              class="faq__arrow__up"
+            />
+            <img
+              src="./faq__arrow__down.svg"
+              alt="arrowDown"
+              class="faq__arrow__down"
+            />
+          </p>
+          <p class="question__block__header__text">
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка Какой то текст для заголовка Какой то текст для
+            заголовка Какой то текст для заголовка Какой то текст для заголовка
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка
+          </p>
+        </div>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="question__block">
+        <div class="question__block__header">
+          <p class="question__block__header__title">
+            Какой реквизит идет в комплекте?
+            <img
+              src="./faq__arrow__up.svg"
+              alt="arrowUp"
+              class="faq__arrow__up"
+            />
+            <img
+              src="./faq__arrow__down.svg"
+              alt="arrowDown"
+              class="faq__arrow__down"
+            />
+          </p>
+          <p class="question__block__header__text">
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка Какой то текст для заголовка Какой то текст для
+            заголовка Какой то текст для заголовка Какой то текст для заголовка
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка
+          </p>
+        </div>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="question__block">
+        <div class="question__block__header">
+          <p class="question__block__header__title">
+            Какой реквизит идет в комплекте?
+            <img
+              src="./faq__arrow__up.svg"
+              alt="arrowUp"
+              class="faq__arrow__up"
+            />
+            <img
+              src="./faq__arrow__down.svg"
+              alt="arrowDown"
+              class="faq__arrow__down"
+            />
+          </p>
+          <p class="question__block__header__text">
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка Какой то текст для заголовка Какой то текст для
+            заголовка Какой то текст для заголовка Какой то текст для заголовка
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка
+          </p>
+        </div>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="question__block">
+        <div class="question__block__header">
+          <p class="question__block__header__title">
+            Какой реквизит идет в комплекте?
+            <img
+              src="./faq__arrow__up.svg"
+              alt="arrowUp"
+              class="faq__arrow__up"
+            />
+            <img
+              src="./faq__arrow__down.svg"
+              alt="arrowDown"
+              class="faq__arrow__down"
+            />
+          </p>
+          <p class="question__block__header__text">
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка Какой то текст для заголовка Какой то текст для
+            заголовка Какой то текст для заголовка Какой то текст для заголовка
+            Какой то текст для заголовка Какой то текст для заголовка Какой то
+            текст для заголовка
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="question">
+      <div class="question__main">
+        <p class="question__main--first">Почему выбирают нас?</p>
+        <h1 class="question__main--second">Новости</h1>
+      </div>
+      <!-- Frequently Asked Question Panel -->
+      <div class="news__container"></div>
+    </section>
+
+    <!-- More button -->
+    <div class="more">
+      <div class="more__bar">
+        <p>Показать еще</p>
+      </div>
+    </div>
+
+    <!-- NEWS MODAL -->
+
+    <div class="news__modal"></div>
+
+    <!-- FOR THE ORDERS MADE -->
+
+    <!-- <div class="orders_modal"> -->
+    <div class="modalWindow total_order">
+      <div class="orders">
+        <div class="order_detail">
+          <div class="order__title">Ваша заявка</div>
+          <div class="cancel__order">
+            <img src="./random__cancel.svg" alt="cancel" />
+          </div>
+
+          <h1 class="cardTitle__main order">
+            Фотобудка с ширмой <span class="cardTitle__number order"></span>
+          </h1>
+          <div class="cardTitle__measurement order">Размер: 2м x 1.5м x 2м</div>
+
+          <div class="current__order__price">
+            <p>17 500 <i class="fa fa-ruble-sign"></i></p>
+          </div>
+
+          <div class="photobuds__sort order">
+            <div class="select order">
+              <select id="standard-select order">
+                <option value="1 час" id="option_1" data-cost="0">1 час</option>
+                <option value="2 часа" id="option_2" data-cost="0">
+                  2 часа
+                </option>
+                <option value="3 часа" id="option_3" data-cost="0">
+                  3 часа
+                </option>
+                <option value="5 часов" id="option_4" data-cost="0">
+                  5 часов
+                </option>
+                <option value="2 дня" id="option_5">2 дня</option>
+                <option value="3 дня" id="option_6">3 дня</option>
+              </select>
+              <img
+                class="select__arrow order"
+                src="./dropdown.svg"
+                alt="dropdown"
+              />
+            </div>
+          </div>
+
+          <div class="moreOptions"></div>
+        </div>
+        <div class="remainder">
+          <div class="totalCost">
+            <div class="totalCost__title">Итого:</div>
+            <p class="totalCost__price">
+              17 500 <i class="fa fa-ruble-sign"></i>
+            </p>
+          </div>
+
+          <form action="#">
+            <input
+              type="tel"
+              class="phoneNumber"
+              placeholder="+7 (000) 000 00 00"
+            />
+            <div class="photobuds__sort form">
+              <div class="select form">
+                <select id="standard-select form">
+                  <option value="Option 1">Позвоните мне</option>
+                  <option value="Option 2">Напишите мне</option>
+                </select>
+                <img
+                  class="select__arrow form"
+                  src="./dropdown.svg"
+                  alt="dropdown"
+                />
+              </div>
+            </div>
+          </form>
+
+          <div class="total__invoice checkout"><p>Отправить заявку</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+
+    <div class="contacts">
+      <div class="contact__intro">
+        <p>Мы всегда доступны для вас</p>
+      </div>
+      <div class="contact__heading">
+        <h3>Контакты</h3>
+      </div>
+      <div class="contact__infos">
+        <div class="contact__info telephone">
+          <img src="./telephone__icon.svg" alt="telephone" />
+          <div class="contact__group">
+            <h3 class="contact__name">Телефон</h3>
+            <p class="contact__detail">+7 495 123 45 67</p>
+          </div>
+        </div>
+        <div class="contact__info address">
+          <img src="./loaction.svg" alt="location" />
+          <div class="contact__group address">
+            <h3 class="contact__name">Адрес</h3>
+            <p class="contact__detail">
+              109382, Москва, пр. <br />
+              Егорьевский, д.2а, стр.10 въезд на машине только с улицы
+              Люблинская
+            </p>
+          </div>
+        </div>
+        <div class="contact__info mail">
+          <div class="contact__group mail">
+            <h3 class="contact__name">Почта</h3>
+            <p class="contact__detail"><a>info@test.ru</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      href="https://yandex.ru/maps/?um=constructor%3A62f5914d6ad9beffc7b7c59a3e9b666afa7fd588d9489155e06f6274c8da719d&amp;source=constructorStatic"
+      target="_blank"
+      ><img
+        src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A62f5914d6ad9beffc7b7c59a3e9b666afa7fd588d9489155e06f6274c8da719d&amp;width=375&amp;height=400&amp;lang=ru_RU"
+        alt=""
+        style="border: 0"
+    /></a>
+  </body>
+</html>
