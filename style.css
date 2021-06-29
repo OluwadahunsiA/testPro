@@ -3,12 +3,7 @@
         margin:0;
         padding:0;
         box-sizing:border-box;
-    
     }
- 
-
-    /* Logo */
-
     .logo{
         position:relative;
         height:60px;
@@ -16,26 +11,18 @@
         margin-top:10px;
         margin-left:12px;
     }
-
-
-    /* for the video */
-
     .video{
         position:relative;
         width:345px;
         height:200.54px;
         margin-left:16px;
         margin-top: 41px;
-        
-       
         border:3px solid #EE3D48;
         border-radius:8px;
-
         display:flex;
         align-items: center;
         justify-content: center;
     }
-
     .video__image{
         position:absolute;
         overflow:hidden;
@@ -43,10 +30,7 @@
         height:187.46px;
         padding:6.27px 6.31px;
         border-radius:8px;
-
     }
-
-    /* overlay */
     .video__image::after{
         content:'';
         position:absolute;
@@ -58,9 +42,6 @@
         cursor:pointer;
         z-index:1;
     }
-
-
-
     .video__image--player{
         position:absolute;
         top:2px;
@@ -68,7 +49,6 @@
         height:100%;
         width:100%;  
     }
-
     .video__image__control{
         position:absolute;
         width:70px;
@@ -78,9 +58,7 @@
         transform:translate(-50%,-50%);
         cursor:pointer;
         z-index:50;
-
     }
-
     .video__image__control--circle{
         position:absolute;
         width:70px;
@@ -92,33 +70,25 @@
         transform:translate(-50%,-50%);
         border-radius:50%;
     }
-
     .video__image__control--button{
         position:absolute;
         top:50%;
         left:50%;
         transform:translate(-40%,-50%);
     }
-
     .video__dots{
         position:absolute;
         right:-10px;
         top:-13.7px;
-        z-index:-1;
-       
+        z-index:-1;     
     }
-
     .video__ellipse{
         position:absolute;
         z-index:-1;
         left:-17px;
         bottom:-75px;
     }
-
-    /* The modal window */
-
-  .modalWindow{
-      
+  .modalWindow{ 
       position:fixed;
       top:0;
       left:0;
@@ -131,26 +101,20 @@
       align-items:center;
       transition:all 0.5s ease;
   }
-
   .modalWindow.hide{
       display:none;
       z-index:-10;
   }
-
   .modalWindow .video__image--player{
-   
       top:55%;
       left:50%;
       width:97%;
       height:60%;
       transform:translate(-50%,-60%);
       box-shadow: 0 20px 20px rgba(0,0,0,0.9);
-      outline:none;
-      
+      outline:none;   
   }
-
-  .modalWindow__fas{
-   
+  .modalWindow__fas{ 
     position:absolute;
     cursor:pointer;
     display:flex;
@@ -164,18 +128,11 @@
     color:black;
     font-size:17.44px;
   }
-
-
- 
-/* TEXT SECTION */
-
 .text{
     position:relative;
     margin-top:61.46px;
     margin-left:16px;   
 }
-
-
 .text__main{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -185,25 +142,19 @@
     width:345px;
     color:#EE3D48;
 }
-
 .text__main--span{
     color:black;
 }
-
 .text__paragraph{
     margin-top:20px;
     height:95px;
     width:345px;
-    font-family: 'Work Sans', sans-serif;
-  
+    font-family: 'Work Sans', sans-serif;  
 }
-
 .text__paragraph a{
     color:red;
     text-decoration: underline;
 }
-
-
 .text__detail{
     display:flex;
     flex-wrap:wrap;
@@ -216,65 +167,45 @@
     font-size:14px;
     line-height:16px;
     text-align: center;
-  
     font-family: 'Work Sans', sans-serif;
     color:#131313;
 }
-
 .text__detail__content{
     display:flex;
     justify-content: center;
     position:relative;
     width:156px;
     height:90px;
-    text-align: center;
-   
+    text-align: center; 
     font-size:14px;
     line-height:16px;
-
 }
-
 .text__detail__image{
     position:absolute;
     left:50%;
     top:30%;
     transform: translate(-50%,-50%);
 }
-
-
-
-
 .text__detail__text{
     position:absolute;
     bottom:0;
 }
-
-
-
-/* Photobuds */
-
 .photobuds{
     margin-left: 16px;
     margin-top: 80px;
 }
-
-
 .photobuds__heading{
     font-family: 'Roboto Slab', serif;
     font-weight:700;
     font-style: normal;
     font-size: 32px;
     line-height: 42.2px;
-
 }
-
 .photobuds__sort{
     margin-top:19.42px;
     font-family: 'Work Sans', sans-serif;
     display:flex;
 }
-
-
 .photobuds__sort label{
     width:78px;
     height:15.54px;
@@ -284,15 +215,11 @@
     line-height: 16px;
     color:#131313;
 }
-
 .select{
     position:relative;
 }
-
 select {
-    
     appearance: none;
-  
     background-color: transparent;
     border: none;
     padding: 0 1em 0 0;
@@ -311,30 +238,21 @@ select {
     top:60%;
     transform:translate(-50%,-50%);
     z-index:-5;
-
 }
-
-
-/* Photobud card */
-
 .cardSection{
     position:relative;
     width:375px;
 }
-
 .photoCards{
     box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.09);
 }
-
 .cards{
     position:relative;
     margin-top: 19.26px;
     width:100%;
     overflow:hidden;
-    background-color: #FFFFFF;
-    
+    background-color: #FFFFFF;  
 }
-
 .card__images{
     position:relative;
     display:flex;
@@ -342,17 +260,11 @@ select {
     margin-top:16px;
     transition:all 1s ease;
 }
-
 .card__image{
-    
     margin-right: 16px;
     height:222px;
-    width:296px;
-   
+    width:296px; 
 }
-
-
-
 .card__image__arrow{
     position:absolute;
     width:40px;
@@ -363,28 +275,19 @@ select {
     transform: translate(-50%,-50%);
     border-radius: 2px;
     background-color: rgba(0,0,0,0.24);
-    
 }
-
-
-
 .card__image__arrow img{
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
 }
-
 .card__image__arrow.left{
     left: 24px;
 }
-
 .card__image__arrow.right{
     left:273px;
 }
-
-/* dots */
-
 .dots{
     position:relative;
     display:flex;
@@ -394,7 +297,6 @@ select {
     margin-left:50%;
     transform: translate(-50%,-50%);   
 }
-
 .dots__dot{
     height:4px;
     width:8px;
@@ -402,28 +304,20 @@ select {
     left:50%;
     background-color: #D5DAE0; 
 }
-
 .dots__dot.long{
     width:24px;
 }
-
 .activeDot{
     height:4px;
-    /* width:8px; */
     background-color:#EE3D48;
     position:absolute;
     left:13.3px;
     border-radius: 10px;
 }
-
-
-
-/* Card Title */
 .cardTitle{
     margin-top:16.84px;
     margin-left:16px;
 }
-
 .cardTitle__main{
     font-family: 'Work Sans', sans-serif;
     font-weight:600;
@@ -431,9 +325,7 @@ select {
     line-height:23px;
     color:#131313;
     font-style:normal;
-
 }
-
 .cardTitle__measurement{
     margin-top:10px;
     font-family: 'Work Sans', sans-serif;
@@ -442,17 +334,12 @@ select {
     font-weight:500;
     font-style:normal;
     color: #6a6a6a;
-
 }
-
 .extraOptions{
     position:relative;
     margin-left:16px;
     margin-top:24.09px;
 }
-
-
-
 .extraOptions__title{
     position:relative;
     font-family: 'Work Sans', sans-serif;
@@ -463,9 +350,7 @@ select {
     color:#EE3D48;
     font-weight:600;
     font-size:12px;
-    
 }
-
 .extraOptions__title::after{
     content:'';
     position:absolute;
@@ -478,37 +363,23 @@ select {
 .extraOptions__cards{
     position:relative;
     margin-top:8px;
-    /* width:320px; */
     margin-right:20px;
     height:165px;
-    overflow:scroll;
-   
+    overflow:scroll; 
 }
-
-  /* width */
   .extraOptions__cards::-webkit-scrollbar {
     width: 3px;
-    border-radius: 2px;
-    
+    border-radius: 2px; 
   }
-
- 
-
-  
-  /* Handle */
   .extraOptions__cards::-webkit-scrollbar-thumb {
     background: #EE3D48;
   }
-
- 
-
 .extraOptions__cards__container{
     background-color:#FAFAFA;
     height:76px;
     border-bottom:1px solid #EBEBEB;
     border-right: 1px solid #EBEBEB;
 }
-
 .extraOptions__cards__pic{
     position:absolute;
     width:60px;
@@ -538,12 +409,10 @@ select {
     margin-top:14px;
     margin-left: 8px;
 }
-
 .number{
     position:absolute;
     margin-left:5px;
 }
-
 .extraOptions__cards__text__price{
     font-family: 'Roboto Slab';
     height:18px;
@@ -556,14 +425,10 @@ select {
     margin-top:44px;
     color:#EE3D48;
 }
-
 .extraOptions__cards__text__price .fa-ruble-sign{
     line-height:18px;
     font-size: 12px;
 }
-
-/* Checkbox */
-
  .extraOptions__cards__check{
      position:relative;
      display:block;
@@ -572,48 +437,30 @@ select {
      top:15px;
      border:1px solid #EE3D48;
      margin-left:93%;
-
  }
-
  .extraOptions__cards__check input{
      position:absolute;
      opacity:0;
-
      cursor:pointer;
      height:0;
      width:0;
  }
-
  .extraOptions__cards__customMark{
      position:absolute;
      top:0;
      left:0;
      height:13px;
      width:13px;
-     background-color: #FFFFFF;
-    
+     background-color: #FFFFFF;  
  }
-
-
-
-
  .extraOptions__cards__check input:checked ~ .extraOptions__cards__checkmark .extraOptions__cards__customMark{
-    background-color:#EE3D48;
-    
+    background-color:#EE3D48;  
  }
-
-
-
- /* Rent time */
-
-
 .timeRent{
     position:relative;
     margin-left:16px;
     margin-right:16px;  
-
 }
-
 .timeRent__heading{
     position:absolute;
     top:0;
@@ -623,14 +470,12 @@ select {
     line-height:16px;
     color:#939598;
 }
-
 .timeRent__frames{
     position:absolute;
     display:flex;
     flex-wrap: wrap;
     top: 30px;
 }
-
 .timeRent__frames--number{
     background-color: #F1F2F2;
     padding:4px 4px;
@@ -638,7 +483,6 @@ select {
     width: max-content;
     margin-right: 8px;
     margin-bottom: 8px;
-
 }
 .timeRent__frames--number p{
     padding:4px 10px;
@@ -646,13 +490,10 @@ select {
     font-size:12px;
     line-height: 18px;
 }
-
 .timeRent__frames--number.active{
     background-color: #EE3D48;
     color:#FFFFFF
 }
-
-
 .total{
     position:relative;
     margin-top: 130px;
@@ -661,8 +502,6 @@ select {
     justify-content: space-between;
     width:335px;
 }
-
-
 .total__price{
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
@@ -671,12 +510,9 @@ select {
     line-height: 42.2px;
     color:#131313
 }
-
 .total__price .fa-ruble-sign{
     font-size:25px;
-  
 }
-
 .total__invoice{
     font-family: 'Roboto', serif;
     display:flex;
@@ -685,66 +521,48 @@ select {
     text-align: center;
     color:#FFFFFF;
     background-color: #EE3D48;
-    /* margin-right: 40px; */
     width:167px;
     height:40px;
     border-radius: 6px;
     margin-bottom: 18px;    
 }
-
 .total__invoice p{
     line-height: 21px;
     font-size: 18px;
     font-weight: bold; 
 }
-
-
-/* Frequently Asked Questions */
-
 .question{
     margin-top:62px;
     margin-left:16px;
 }
-
 .question__main{
     position:relative;
 }
-
 .question__main--first{
     font-family: 'Work Sans', sans-serif;
     font-style:normal;
     font-weight:normal;
     font-size:16px;
     line-height:19px;
-    color:#EE3D48;
-    
+    color:#EE3D48; 
 }
-
 .question__main--second{
     font-family: 'Roboto Slab';
     margin-top: 3px;
-  
     font-style:normal;
     font-size:32px;
     color:#131313;
     line-height: 42px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
-
 .question__block{
     margin-top:20px;
     margin-bottom:10px;
 }
-
-
 .question__block__header{
     cursor:pointer;
     z-index:10;
 }
-
-
-
 .question__block__header__title{
     position:relative;
     font-family: 'Work Sans', sans-serif;
@@ -759,41 +577,28 @@ select {
     color:#131313;
     box-shadow: -3px 2px 7px 11px rgba(221,221,221,0.48);
     transition:all 0.4s ease;
-   
     z-index:20;
-   
 }
-
-
-
 .faq__arrow__up, .faq__arrow__down{
     position:absolute;
     top:20px;
     right:21px;
-    z-index:1;
-    
-    
+    z-index:1;    
 }
-
 .faq__arrow__up{
-    display:none;
-    
+    display:none; 
 }
-
 .question__block__header__title.active{
     background-color: #EE3D48;
     color:white;
     transition:all 0.4s ease;
 }
-
 .question__block__header__title.active .faq__arrow__down{
     display:none;
 }
-
 .question__block__header__title.active .faq__arrow__up{
     display:block
 }
-
 .question__block__header__text{
     display:None;
     position:relative;
@@ -805,11 +610,8 @@ select {
     font-size: 15px;
     line-height: 16px;
     margin-top: 14px;
-    opacity:0;
-    
+    opacity:0;  
 }
-
-
 .question__block__header__text::before{
     content:'';
     left:-9px;
@@ -817,25 +619,18 @@ select {
     width:1px;
     height:120px;
     border-radius: 2px;
-    background-color: #EE3D48;
-    
+    background-color: #EE3D48;  
 }
-
 .question__block__header__text.active{
     display:block;
     opacity:1;
-    transition:opacity 3s ease 2s;
-   
+    transition:opacity 3s ease 2s; 
 }
-
-/* NEWS */
-
 .news{
     background-color:#FAFAFA;
     margin-right: 16px;
     width:340px;
 }
-
 .news__photo{
     position:relative;
     margin-top:20px;
@@ -844,12 +639,10 @@ select {
     margin-right: 16px;
     text-align: center;
 }
-
 .news__photo .news__photo__image{
     display:inline-block;
     width:340px;
 }
-
 .news__photo__arrow{
     position:absolute;
     display:inline-block;
@@ -858,7 +651,6 @@ select {
     bottom:-16px;
     left:8px;
 }
-
 .news__detail{
     margin-top: 20px;
     margin-left:8px;
@@ -867,14 +659,11 @@ select {
     font-weight: 500;
     font-size:12px;
     letter-spacing:0.9px;
-
 }
-
 .news__detail__service{
     margin-top: 30px;
     margin-right:16px;
     color:#EE3D48;
-    
     font-weight:500;
     font-size:12px;
     line-height:14px;
@@ -882,26 +671,20 @@ select {
     height:14px;
     letter-spacing:1.1px;
 }
-
 .news__detail__title{
     margin-top:4px;
-    
     font-weight:600;
     font-size:20px;
     line-height:23px;
     color:#131313;
-    font-style:normal;
-    
+    font-style:normal;   
 }
-
 .news__detail__content{
     margin-top: 8px;
     line-height:14px;
     color: #131313;
-    font-style: normal;
-    
+    font-style: normal;  
 }
-
 .news__detail__date{
     margin-top: 20px;
     padding-bottom:20px;
@@ -909,11 +692,9 @@ select {
     color:#6a6a6a;
     font-style: normal; 
 }
-
 .more{
     margin-top: 30px;
 }
-
 .more__bar{
     position:relative;
     width:340px;
@@ -927,63 +708,40 @@ select {
     align-items: center;
     margin-bottom: 20px;
 }
-
-
-
 .more__bar p{
     color:#EE3D48;
     display:flex;
     justify-content: center;
-   
     position:absolute;
     font-family: "Roboto";
-    font-weight: 700;
-    
+    font-weight: 700; 
     font-size:18px;
     line-height: 18px;
-    text-align:center;
-   
+    text-align:center; 
 }
-
-
 .hideNews{
     display:none;
 }
-
-
-/* NEWS MODAL */
-
 .news__modal{
     position:relative;
 }
-
 .modalResize{
     position:relative;
     top:38%;
 }
-
-
-
 .modalWindow.rebrand{
     display:none;
 }
-
-
-
 .photoCards.rebrand{
     box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.09);
     margin-left:50%;   
 }
-
 .cards__stop__over.rebrand{
-    /* height:100vh; */
     position:relative;
     margin: -220px auto;
     width:360px;  
     border:2px solid transparent;  
 }
-
-
 .card__rebrand{
     position:relative;
     display:flex;
@@ -994,10 +752,8 @@ select {
     width:98%;
     margin-right:2px;
     overflow:hidden; 
-    border:2px solid transparent;
-   
+    border:2px solid transparent; 
 }
-
 .card__images.rebrand{
     border:2px solid red; 
     border:2px solid transparent;
@@ -1010,18 +766,13 @@ select {
     margin-top:16px;
     transition:all 1s ease;
 }
-
 .card__image.rebrand{
     height:320px;
     width:100%;
 }
-
 .cards__stop__over{
     position:relative;
 }
-
-
-
 .card__image__arrow.rebrand{
     position:absolute;
     width:50px;
@@ -1032,18 +783,14 @@ select {
     border-radius: 2px;
     background-color: rgba(0,0,0,0.2);
     opacity:0.5;
-    
-    z-index:5;
-    
+    z-index:5;  
 }
-
 .card__image__arrow img.rebrand{
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
 }
-
 .card__image__arrow.left.rebrand{
     position:absolute;
     top:50%;
@@ -1051,7 +798,6 @@ select {
     transform: translate(-50%,-50%);
     left: 6px;
 }
-
 .card__image__arrow.right.rebrand{
     position:absolute;
     top:50%;
@@ -1059,14 +805,10 @@ select {
     transform: translate(-50%,-50%);
     left:308px;
 }
-
 .card__image__arrow.rebrand.cancel{
     top:27px;
     left:305px;
 }
-
-/* dots */
-
 .dots.rebrand{
     position:absolute;
     display:flex;
@@ -1076,7 +818,6 @@ select {
     transform: translate(-50%,-50%);  
     z-index: 20; 
 }
-
 .dots__dot{
     height:4px;
     width:8px;
@@ -1084,11 +825,9 @@ select {
     left:50%;
     background-color: #D5DAE0; 
 }
-
 .dots__dot.long{
     width:24px;
 }
-
 .activeDot{
     height:4px;
     background-color:#EE3D48;
@@ -1096,8 +835,6 @@ select {
     left:13.3px;
     border-radius: 10px;
 }
-
-/* For the news modal Text */
 .color{
     position:absolute;
     margin-top:-4px;
@@ -1106,14 +843,12 @@ select {
     width:316px;
     background-color: #FFFFFF;
 }
-
 .modal__news__content{
     position:absolute;
     margin-top:-4px;
     left:21px;
     right:19px;
 }
-
 .news__modal__detail__mini{
     position:absolute;
     top:28px;
@@ -1126,8 +861,6 @@ select {
     color:#EE3D48;
     letter-spacing: 0.9;
 }
-
-
 .news__modal__detail__date{
     position:absolute;
     top:30px;
@@ -1139,7 +872,6 @@ select {
     letter-spacing: 0.9;
     right:12px;
 }
-
 .news__modal__content__main{
     position:absolute;
     top:56px;
@@ -1149,8 +881,6 @@ select {
     line-height:28px;
     color:#131313;
 }
-
-
 .news__modal__content__text p{
     display:inline-block;
     position:absolute;
@@ -1165,29 +895,20 @@ select {
     height:85px;
     overflow: scroll;
 }
-
-
 .news__modal__content__text p a{
     color:#EE3D48;
     text-decoration: underline;
 }
-
-
-/* FOR THE CHECKOUT MODAL */
-
-
 .modalWindow.total_order{
     background-color: #FFFFFF;
     display:none;  
     overflow-y:scroll;
     overflow-x:hidden; 
 }
-
 .modalWindow.total_order.reveal{
     display:block;
     transform: translateY(0%) scale(1);
 }
-
 .orders{
     margin-top:10px;
     position:relative;
@@ -1204,11 +925,6 @@ select {
     opacity:1;
     transition:all 3s ease;
 }
-
-
-
-
-
 .order__title{
     position:absolute;
     top:16px;
@@ -1220,7 +936,6 @@ select {
     line-height:42.2px;
     color:#131313
 }
-
 .cancel__order{
     position:absolute;
     height:17.44px;
@@ -1228,8 +943,6 @@ select {
     top:27.28px;
     right:27.28px; 
 }
-
-
 .cardTitle__main.order{
     position:absolute;
     top:90px;
@@ -1240,7 +953,6 @@ select {
     line-height:18px;
     color:#131313;
 }
-
 .cardTitle__measurement.order{
     position:absolute;
     font-style:normal;
@@ -1249,7 +961,6 @@ select {
     top:100px;
     left:16px;
 }
-
 .current__order__price{
     position:absolute;
     font-weight:600;
@@ -1264,14 +975,11 @@ select {
 .current__order__price .fa-ruble-sign{
     font-size:12px;
 }
-
-
 .photobuds__sort.order{
     position:absolute;
     top:136px;
     left:16px;
 }
-
 .select.order{
     position:absolute;
     border:1px solid #D5DAE0;
@@ -1286,20 +994,15 @@ select{
     transform:translateY(-50%);
     color:rgba(19,19,19,1)
 }
-
 select:focus{
-    outline:none;
-    
+    outline:none;  
 }
-
 .select.order option{
     position:absolute;
 }
-
 .select.order option:focus{
     outline:none;
 }
-
 .select__arrow.order{
     opacity:0.5;
     right:8px;
@@ -1307,7 +1010,6 @@ select:focus{
     z-index:-1;
     transform:translateY(-50%)
 }
-
 .moreOptions{
     position:relative;
     height:max-content;
@@ -1315,15 +1017,12 @@ select:focus{
     margin-left:16px;
     width:300px;
 }
-
 .moreOptions::after{
     content:'';
     position:absolute;
     width:330px;
     border:1px solid #EBEBEB;
-
 }
-
 .chosenOptions{
    font-family: 'Work Sans', sans-serif;
    height:50px;
@@ -1334,24 +1033,18 @@ select:focus{
    font-weight: 600;
    font-size:14px;
    line-height:18px;
-
 }
-
-
 .chosenOptions .fa-ruble-sign{
     font-size:12px;
 }
-
 .order_detail{
     height:62%;
     margin-bottom: 10px;
 }
-
 .remainder{
     position:relative;
     height:140px;
 }
-
 .totalCost{
     position:absolute;
     top:10px;
@@ -1362,7 +1055,6 @@ select:focus{
     justify-content: space-between;
     align-items: center;
 }
-
 .totalCost__title{
     font-family: 'Work Sans', sans-serif;
     font-style:normal;
@@ -1371,7 +1063,6 @@ select:focus{
     line-height:23px;
     color:#131313;
 }
-
 .totalCost__price{
     font-family: 'Roboto Slab', serif;
     font-style:normal;
@@ -1379,14 +1070,10 @@ select:focus{
     font-size:32px;
     line-height: 42px;
 }
-
 .totalCost__price .fa-ruble-sign{
     font-size:27px;
     opacity:0.8;
 }
-
-
-
 .phoneNumber{
     position:absolute;
     top:76px;
@@ -1403,10 +1090,7 @@ select:focus{
     font-style:normal;
     line-height:24px;
     color:#131313;
-
 }
-
-
 .phoneNumber:focus{
     outline:none;
 }
@@ -1419,7 +1103,6 @@ select:focus{
     color:#131313;
     padding-left:10px;
 }
-
 .photobuds__sort.form{
     position:absolute;
     top:60px;
@@ -1437,17 +1120,13 @@ select:focus{
     line-height:16px;
     font-size:14px;
     left:20px;
-    z-index:2;
-    
-    
+    z-index:2;  
 } 
-
 .select__arrow.form{
    top:50%;
    left:130px;
    z-index:-1;
 }
-
 .total__invoice.checkout{
     position:absolute;
     top:129px;
@@ -1455,17 +1134,12 @@ select:focus{
     width:330px;
    height:40px;
 }
-
-
-/* CONTACT SECTION */
-
 .contacts{
     position:relative;
     margin-top: 60px;
     margin-left:16px;
     margin-right: 16px;
 }
-
 .contact__intro{
     font-family: 'Work Sans', sans-serif;
     position:relative;
@@ -1476,7 +1150,6 @@ select:focus{
     line-height:19px;
     font-style:normal;
 }
-
 .contact__heading{
     font-family: 'Roboto Slab', serif;
     position:relative;
@@ -1486,12 +1159,10 @@ select:focus{
     line-height:36px;
     color:#131313;
 }
-
 .contact__infos{
     position:relative;
     margin-top: 20px;
 }
-
 .contact__info{
     font-family: 'Roboto Slab', serif;
     display: flex;  
@@ -1501,12 +1172,10 @@ select:focus{
     margin-top: 4px;
     height:24px;
     width:24px;
-
 }
 .contact__group{
     margin-left:24px;
 }
-
 .contact__group::after{
     content: '';
     top:77px;
@@ -1514,7 +1183,6 @@ select:focus{
     width:280px;
     border:1px solid #D5DAE0;
 }
-
 .contact__name{
     font-weight:400;
     font-size:20px;
@@ -1523,7 +1191,6 @@ select:focus{
     color: #131313;
     letter-spacing: 0.8px;
 }
-
 .contact__detail{
     position:absolute;
     margin-top:4px;
@@ -1538,29 +1205,23 @@ select:focus{
 .contact__info.address{
     margin-top:60px;
 }
-
 .contact__group.address::after{
     top:230px;
 }
-
 .contact__info.mail{
     margin-top: 125px;
     margin-left:24px;
     margin-bottom:60px;
 }
-
 .contact__group.mail:after{
     display:none;
 }
-
 .contact__detail a{
     text-decoration: underline;
 }
-
 .addPointer{
     pointer-events: auto;
 }
-
 .removePointer{
     pointer-events:none;
 }
