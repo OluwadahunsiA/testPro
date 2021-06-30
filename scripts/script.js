@@ -138,6 +138,7 @@ photoCards.forEach((card) => {
         <div  class = "${ele} extraOptions__cards__check__input" >
         <span class="extraOptions__cards__checkmark">
           <img
+          loading="lazy"
             src=" ./check.svg"
             alt="check"
             class="${ele} extraOptions__cards__customMark"

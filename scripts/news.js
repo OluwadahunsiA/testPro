@@ -12,11 +12,13 @@ newsArray.forEach((news, idx) => {
   newEle.innerHTML = ` 
    <div class="news__photo">
   <img
+  loading="lazy"
     src="./news__photo.jpeg"
     alt="news"
     class="news__photo__image"
   />
   <img
+  loading="lazy"
     src="./news__arrow.svg"
     alt="arrow"
     class="news__photo__arrow"

@@ -12,17 +12,17 @@ allCards.forEach((card) => {
   photo.innerHTML = `
   <section class="cards">
     <div class="card__images">
-      <img class="card__image" src="./photo.jpeg" alt="card" />
-      <img class="card__image" src="./photo.jpeg" alt="card" />
-      <img class="card__image" src="./photo.jpeg" alt="card" />
-      <img class="card__image" src="./photo.jpeg" alt="card" />
-      <img class="card__image" src="./photo.jpeg" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
     </div>
     <div class="card__image__arrow left">
-      <img src="./left_arrow.svg" alt="left" />
+      <img loading="lazy" src="./left_arrow.svg" alt="left" />
     </div>
     <div class="card__image__arrow right">
-      <img src="./right_arrow.svg" alt="right" />
+      <img loading="lazy" src="./right_arrow.svg" alt="right" />
     </div>
   </section>
   <div class="dots">
