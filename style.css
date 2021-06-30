@@ -78,7 +78,7 @@
   }
   .video__dots {
     position: absolute;
-    right: -10px;
+    right: -0px;
     top: 100px;
     z-index: -1;
   }

@@ -89,7 +89,7 @@ for (const key in moreNews) {
 const selectModals = document.querySelectorAll(".modalWindow.rebrand");
 const modalLength = Array.from(selectModals).length;
 selectModals.forEach((modal) => {
-  let singleCard = modal.querySelector(".photocards");
+  let singleCard = modal.querySelector(".photocards.rebrand");
   const leftArrow = singleCard.querySelector(".left");
   const rightArrow = singleCard.querySelector(".right");
   const cardImages = singleCard.querySelectorAll(".card__image");
@@ -99,7 +99,7 @@ selectModals.forEach((modal) => {
   const longDot = singleCard.querySelector(".dots__dot.long");
   const longDotWidth = 3.4;
   let counter = 0;
-  const modalSize = window.innerWidth - 42.82;
+  const modalSize = window.innerWidth - 45.9;
   function leftArrowHandler(e) {
     if (counter <= 0) {
       counter = 0;
@@ -107,7 +107,7 @@ selectModals.forEach((modal) => {
     }
     counter === 0 ? (counter = 0) : counter--;
     cardImageContainer.style.transform = `translateX(${
-      -modalSize * (counter % arr.length)
+      -(modalSize + (counter % arr.length)) * (counter % arr.length)
     }px)`;
     activeDot.style.width = `${
       ((counter % modalLength) + 1) * (longDotWidth + 2)
@@ -119,7 +119,7 @@ selectModals.forEach((modal) => {
     }
     counter === cardImages.length - 1 ? (counter = 0) : counter++;
     cardImageContainer.style.transform = `translateX(${
-      -modalSize * (counter % arr.length)
+      -(modalSize + (counter % arr.length)) * (counter % arr.length)
     }px)`;
     activeDot.style.width = `${
       ((counter % modalLength) + 1) * (longDotWidth + 2)

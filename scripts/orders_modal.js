@@ -31,10 +31,10 @@ function setPriceForModal(priceOption) {
 }
 getAllCards.forEach((card) => {
   function mainCardClicked(e) {
-    if (e.target.classList.contains("extraOptions__cards__customMark")) {
-      e.stopPropagation();
-      return;
-    }
+    // if (e.target.classList.contains("extraOptions__cards__customMark")) {
+    //   e.stopPropagation();
+    //   return;
+    // }
     if (
       e.target.checked ||
       e.target.classList.contains("extraOptions__cards__check__input")
