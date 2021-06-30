@@ -30,46 +30,51 @@ function setPriceForModal(priceOption) {
   return displayPriceOption.length < 6 ? fiveDigitsOption : sixDigitsOption;
 }
 getAllCards.forEach((card) => {
-  function mainCardClicked(e) {
-    // if (e.target.classList.contains("extraOptions__cards__customMark")) {
-    //   e.stopPropagation();
-    //   return;
-    // }
-    if (
-      e.target.checked ||
-      e.target.classList.contains("extraOptions__cards__check__input")
-    ) {
-      if (e.target.checked) {
-        optionSpace[e.target.classList[0]] = e.target;
-      } else if (!e.target.checked) {
-        delete optionSpace[e.target.classList[0]];
+  function mainCardClicked() {
+    const clickedInputBox = this.querySelectorAll(
+      ".extraOptions__cards__customMark"
+    );
+    clickedInputBox.forEach((input) => {
+      if (input.classList.contains("activeInput")) {
+        optionSpace[input.classList[0]] = input;
+      } else if (!input.classList.contains("activeInput")) {
+        delete optionSpace[input.classList[0]];
       }
-    }
+    });
   }
-  card.addEventListener("click", (e) => mainCardClicked(e));
+  card.addEventListener("click", mainCardClicked);
 });
+
 invoices.forEach((invoice) => {
   function invoiceClickHandler() {
     orderMoreOptions.innerHTML = "";
     const currentCard = invoice.parentElement.parentElement;
     for (key in optionSpace) {
-      const nameOfOption = optionSpace[
-        key
-      ].parentElement.parentElement.querySelector(
+      console.log(optionSpace[key]);
+      // const nameOfOption = optionSpace[
+      //   key
+      // ].parentElement.parentElement.querySelector(
+      //   ".extraOptions__cards__text__head"
+      // ).innerText;
+
+      const currentInputParent = optionSpace[key].parentElement.closest(
+        ".extraOptions__cards__check"
+      );
+
+      const inputParentText = currentInputParent.parentElement.querySelector(
         ".extraOptions__cards__text__head"
       ).innerText;
-      const priceOfOption = optionSpace[
-        key
-      ].parentElement.parentElement.querySelector(
+
+      const priceOfOption = currentInputParent.parentElement.querySelector(
         ".extraOptions__cards__text__price"
       );
       const convertedOrderPrice = setPriceForModal(priceOfOption);
       const priceOfOptionToNumber = +getPrice(priceOfOption);
       totalExtraOptionCost += priceOfOptionToNumber;
-      optionSpace[key].checked = false;
+      optionSpace[key].classList.remove("activeInput");
       const orderExtraOption = document.createElement("div");
       orderExtraOption.classList.add("chosenOptions");
-      orderExtraOption.innerHTML = `  <p class="chosenOption__name">${nameOfOption}</p>
+      orderExtraOption.innerHTML = `  <p class="chosenOption__name">${inputParentText}</p>
       <p class="chosenOption__price">
       ${convertedOrderPrice} <i class="fa fa-ruble-sign"></i>
       </p>

@@ -453,12 +453,12 @@
     width: 13px;
     background-color: #ffffff;
   }
-  .extraOptions__cards__check
-    input:checked
-    ~ .extraOptions__cards__checkmark
-    .extraOptions__cards__customMark {
-    background-color: #ee3d48;
+
+  .extraOptions__cards__customMark.activeInput{
+    background-color:#ee3d48;
   }
+
+
   .timeRent {
     position: relative;
     margin-left: 16px;
