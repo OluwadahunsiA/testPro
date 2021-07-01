@@ -11,10 +11,16 @@ const photoCards = document.querySelectorAll(".photoCards");
 const size = window.innerWidth - 63;
 function playHandler(e) {
   modal.classList.remove("hide");
+  let video = document.getElementById("video");
+  let src = video.dataset.src;
+  video.src = src;
 }
 function cancelHandler(e) {
   modal.classList.add("hide");
-  player.stopVideo();
+  let video = document.getElementById("video");
+  let src = "";
+  video.src = src;
+  // player.stopVideo();
 }
 photoCards.forEach((card) => {
   const leftArrow = card.querySelector(".left");

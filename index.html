@@ -56,15 +56,18 @@
       </div>
 
       <div class="modalWindow hide">
-        <div id = "video__image--player"></div>
-        <script id="video_load" defer src="https://www.youtube.com/iframe_api"></script>
-        <script>
-          let player;
-          function onYouTubeIframeAPIReady(){
-            player = new YT.Player('video__image--player',{videoId: '2rEXRPZCi_s', width:560, height:315, playerVars:{autoplay:0,controls:1,showinfo:0,modestbranding:1,loop:0, fs:1,cc_load_policy:0,autohide:0}})
-            
-          }
-        </script>
+        <iframe
+        id = "video"
+        width="560"
+        height="315"
+        class="video__image--player"
+        src=""
+        data-src="https://www.youtube.com/embed/2rEXRPZCi_s?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
         <div class="modalWindow__fas">
           <img src="./cancel.svg" loading="lazy" alt="cancel" />
         </div>
