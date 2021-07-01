@@ -12,11 +12,11 @@ allCards.forEach((card) => {
   photo.innerHTML = `
   <section class="cards">
     <div class="card__images">
-      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
-      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
-      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
-      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
-      <img class="card__image" loading="lazy" src="./photo.jpeg" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.webp" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.webp" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.webp" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.webp" alt="card" />
+      <img class="card__image" loading="lazy" src="./photo.webp" alt="card" />
     </div>
     <div class="card__image__arrow left">
       <img loading="lazy" src="./left_arrow.svg" alt="left" />
@@ -37,7 +37,6 @@ allCards.forEach((card) => {
     </h1>
     <p class="cardTitle__measurement card">Размер: 2м x 1.5м x 2м</p>
   </div>
-  <!-- Extra Options -->
   <div class="extraOptions">
     <h2 class="extraOptions__title">Доп. опции</h2>
     <div class="extraOptions__cards">

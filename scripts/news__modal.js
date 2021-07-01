@@ -32,11 +32,11 @@ for (const key in moreNews) {
     <div class="cards__stop__over rebrand">
       <section class="card__rebrand">
         <div class="card__images rebrand">
-          <img class="card__image rebrand" src="./photo.jpeg" alt="card" />
-          <img class="card__image rebrand" src="./photo.jpeg" alt="card" />
-          <img class="card__image rebrand" src="./photo.jpeg" alt="card" />
-          <img class="card__image rebrand" src="./photo.jpeg" alt="card" />
-          <img class="card__image rebrand" src="./photo.jpeg" alt="card" />
+          <img class="card__image rebrand" src="./photo.webp" alt="card" />
+          <img class="card__image rebrand" src="./photo.webp" alt="card" />
+          <img class="card__image rebrand" src="./photo.webp" alt="card" />
+          <img class="card__image rebrand" src="./photo.webp" alt="card" />
+          <img class="card__image rebrand" src="./photo.webp" alt="card" />
         </div>
         <div class="card__image__arrow left rebrand">
           <img src="./left_arrow.svg" alt="left" />

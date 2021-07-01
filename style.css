@@ -385,7 +385,7 @@
     width: 60px;
     height: 60px;
     border-radius: 4px;
-    background: url("./photo.jpeg");
+    background: url("./photo.webp");
     background-size: cover;
     margin-top: 8px;
     margin-left: 8px;
@@ -1228,5 +1228,9 @@
   }
   .removePointer {
     pointer-events: none;
+  }
+
+  .map_container{
+    border:0;
   }
 }

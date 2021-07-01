@@ -13,7 +13,7 @@ newsArray.forEach((news, idx) => {
    <div class="news__photo">
   <img
   loading="lazy"
-    src="./news__photo.jpeg"
+    src="./news__photo.webp"
     alt="news"
     class="news__photo__image"
   />

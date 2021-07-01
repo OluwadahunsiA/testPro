@@ -31,20 +31,20 @@
     <script src="./scripts/modal__options.js" defer></script>
     <script src="./scripts/sortCards.js" defer></script>
     <script src="./scripts/mutipleCardClicking.js" defer></script>
-    <!-- <script defer src="https://www.youtube.com/iframe_api"></script> -->
   </head>
   <body>
     <div class="logo container">
-      <img src="./logo.svg" alt="logo" />
+      <img loading="lazy" src="./logo.svg" alt="logo" />
     </div>
     <div class="modal">
       <div class="video">
         <div class="video__image">
-        <img src="./imageBack.png" alt="image" class="video__image--player">
+        <img loading="lazy" src="./imageBack.webp" alt="image" class="video__image--player">
       </div>
           <div class="video__image__control">
             <span class="video__image__control--circle"></span>
             <img
+             loading="lazy"
               src="./arrow.svg"
               alt="play"
               class="video__image__control--button"
@@ -54,7 +54,6 @@
         <img src="./dots.svg" loading="lazy" alt="dots" class="video__dots" />
         <img src="./ellipse.svg" loading="lazy" alt="dots" class="video__ellipse" />
       </div>
-
       <div class="modalWindow hide">
         <iframe
         id = "video"
@@ -164,7 +163,7 @@
           <p class="question__block__header__title">
             Какой реквизит идет в комплекте?
             <img
-            loading="lazy"
+              loading="lazy"
               src="./faq__arrow__up.svg"
               alt="arrowUp"
               class="faq__arrow__up"
