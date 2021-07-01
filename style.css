@@ -105,7 +105,7 @@
     display: none;
     z-index: -10;
   }
-  .modalWindow .video__image--player {
+  .modalWindow .player {
     top: 55%;
     left: 50%;
     width: 97%;

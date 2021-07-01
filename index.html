@@ -31,6 +31,7 @@
     <script src="./scripts/modal__options.js" defer></script>
     <script src="./scripts/sortCards.js" defer></script>
     <script src="./scripts/mutipleCardClicking.js" defer></script>
+    <!-- <script defer src="https://www.youtube.com/iframe_api"></script> -->
   </head>
   <body>
     <div class="logo container">
@@ -41,17 +42,6 @@
         <div class="video__image">
         <img src="./imageBack.png" alt="image" class="video__image--player">
       </div>
-        <!-- <div class="video__image">
-          <iframe
-            width="560"
-            height="315"
-            class="video__image--player"
-            src="https://www.youtube.com/embed/2rEXRPZCi_s"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe> -->
           <div class="video__image__control">
             <span class="video__image__control--circle"></span>
             <img
@@ -66,16 +56,15 @@
       </div>
 
       <div class="modalWindow hide">
-        <iframe
-          width="560"
-          height="315"
-          class="video__image--player"
-          src="https://www.youtube.com/embed/2rEXRPZCi_s?autoplay=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="autoplay"
-          allowfullscreen
-        ></iframe>
+        <div id = "video__image--player"></div>
+        <script id="video_load" defer src="https://www.youtube.com/iframe_api"></script>
+        <script>
+          let player;
+          function onYouTubeIframeAPIReady(){
+            player = new YT.Player('video__image--player',{videoId: '2rEXRPZCi_s', width:560, height:315, playerVars:{autoplay:0,controls:1,showinfo:0,modestbranding:1,loop:0, fs:1,cc_load_policy:0,autohide:0}})
+            
+          }
+        </script>
         <div class="modalWindow__fas">
           <img src="./cancel.svg" loading="lazy" alt="cancel" />
         </div>
